@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>WATERMELON_PLANT_DEF</defName>
+    <label>watermelon plant</label>
+    <description>Watermelon plants produce a large sturdy fruit with delicious watery flesh. Produce a good amount of sustenance but require a skilled gardener to plant and space to grow.</description>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.3</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>WatermelonPlant/Plant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>20</pathCost>
+    <ingestible />
+    <plant>
+			<growDays>8</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RAW_WATERMELON_RESOURCE_DEF</harvestedThingDef>
+			<harvestYield>17</harvestYield>
+			<sowMinSkill>7</sowMinSkill>
+      <sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+      <immatureGraphicPath>WatermelonPlant/Immature</immatureGraphicPath>
+      <visualSizeRange>0.35~1.36</visualSizeRange>
+     	<wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+</Defs>
